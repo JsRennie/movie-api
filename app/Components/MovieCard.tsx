@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import MovieDetails from "../Components/MovieDetails";
 
+//Movie type defintion
 interface MovieCardProps {
   title: string;
   releaseYear: string;
@@ -19,6 +20,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
   runtime,
   plotSummary,
 }) => {
+  // set a state, to trigger onclick to shoe more details
   const [showDetails, setShowDetails] = useState(false);
 
   const handleViewDetails = () => {
@@ -46,6 +48,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
           View Details
         </button>
       </div>
+      {/* The movieDetails card will pop up after the onclick call is made */}
       {showDetails && (
         <MovieDetails
           actors={actors}

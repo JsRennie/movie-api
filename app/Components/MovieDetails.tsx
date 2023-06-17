@@ -1,5 +1,6 @@
 import React from "react";
 
+//type defination
 interface MovieDetailsProps {
   onClose: () => void;
   actors: string;

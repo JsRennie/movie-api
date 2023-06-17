@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+//type definition
 interface SearchBarProps {
   onMovieData: (data: MovieData) => void;
 }
@@ -23,6 +24,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onMovieData }) => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    // consume the API to fetch the movies and return the result to the MovieCard
+
     try {
       const response = await fetch(
         `http://www.omdbapi.com/?t=${encodeURIComponent(
@@ -32,6 +35,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onMovieData }) => {
       const data = await response.json();
       onMovieData(data);
     } catch (error) {
+      //console log the error when the movie entered doesnt exist
       console.error("Error fetching movie data:", error);
     }
   };

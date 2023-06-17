@@ -26,6 +26,7 @@ export default function Home() {
         Please Search Your Favorite Movie, Series, or Documentaries
       </h1>
       <div>
+        {/* movie data will be displayed here */}
         <SearchBar onMovieData={handleMovieData} />
         <div className="mt-4">
           {movieData && Object.keys(movieData).length > 0 ? (
