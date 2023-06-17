@@ -16,8 +16,8 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({
   plotSummary,
 }) => {
   return (
-    <div className="block mx-4 lg:mx-0 lg:fixed lg:inset-0 top-24 lg:flex lg:items-center lg:justify-center lg:z-50 mt-10">
-      <div className="w-fit lg:w-1/2 px-4 bg-gray-200 text-xs md:text-sm rounded-md shadow-xl pb-4">
+    <div className="block mx-4 xl:mx-0 xl:fixed xl:inset-0 top-24 xl:flex xl:items-center xl:justify-center xl:z-50 mt-10">
+      <div className="w-fit xl:w-1/2 px-4 bg-gray-200 text-xs md:text-sm rounded-md shadow-xl pb-4">
         <h1 className="text-base lg:text-lg text-center pt-2">
           More Information About The Movie
         </h1>

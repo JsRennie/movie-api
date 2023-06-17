@@ -26,8 +26,8 @@ const MovieCard: React.FC<MovieCardProps> = ({
   };
 
   return (
-    <div className="block mx-4 lg:mx-0 lg:flex lg:justify-center mt-10">
-      <div className="w-full lg:w-1/4 px-4 bg-gray-200 text-sm rounded-md shadow-xl pb-4 mr-3">
+    <div className="block mx-4 xl:mx-0 lg:flex xl:justify-center mt-10">
+      <div className="w-full xl:w-1/2 px-4 bg-gray-200 text-sm rounded-md shadow-xl pb-4 mr-3">
         <h1 className="text-base lg:text-lg text-center pt-2">
           My Favorite Movie!!
         </h1>

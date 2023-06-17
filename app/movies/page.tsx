@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <main className="mt-8">
-      <h1 className="text-base lg:text-xl font-semibold text-center">
+      <h1 className="text-xl font-semibold text-center">
         Please Search Your Favorite Movie, Series, or Documentaries
       </h1>
       <div>
