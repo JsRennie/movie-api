@@ -26,7 +26,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
   };
 
   return (
-    <div className="block mx-4 xl:mx-0 lg:flex xl:justify-center mt-10">
+    <div className="block mx-4 lg:flex xl:justify-center mt-10">
       <div className="w-full xl:w-1/2 px-4 bg-gray-200 text-sm rounded-md shadow-xl pb-4 mr-3">
         <h1 className="text-base lg:text-lg text-center pt-2">
           My Favorite Movie!!
@@ -40,7 +40,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
         </p>
         <button
           type="button"
-          className="bg-gray-600 rounded-lg text-white px-4 py-3 mt-3"
+          className="bg-gray-600 rounded-lg text-white px-4 py-3 mt-3 hover:border-2 hover:border-slate-800 hover:text-slate-400 hover:bg-white hover:font-semibold"
           onClick={handleViewDetails}
         >
           View Details

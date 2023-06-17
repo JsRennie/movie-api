@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import SearchBar from "../Components/SearchBar";
 import MovieCard from "../Components/MovieCard";
+import Link from "next/link";
 
 interface MovieData {
   Title: string;
@@ -40,6 +41,11 @@ export default function Home() {
             <p className="text-center">No movie data available</p>
           )}
         </div>
+      </div>
+      <div className="flex justify-center items-center ">
+        <button className="bg-blue-500 text-white mt-20 font-semibold px-3 py-2 rounded-xl hover:translate-x-3">
+          <Link href={"/"}>Back To Home Page</Link>
+        </button>
       </div>
     </main>
   );

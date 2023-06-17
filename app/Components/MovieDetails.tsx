@@ -16,7 +16,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({
   plotSummary,
 }) => {
   return (
-    <div className="block mx-4 xl:mx-0 xl:fixed xl:inset-0 top-24 xl:flex xl:items-center xl:justify-center xl:z-50 mt-10">
+    <div className="block mx-4 xl:mx-0 mt-10">
       <div className="w-fit xl:w-1/2 px-4 bg-gray-200 text-xs md:text-sm rounded-md shadow-xl pb-4">
         <h1 className="text-base lg:text-lg text-center pt-2">
           More Information About The Movie
@@ -35,7 +35,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({
         </p>
         <button
           type="button"
-          className="bg-gray-600 rounded-lg text-white px-4 py-3 mt-3"
+          className="bg-gray-600 rounded-lg text-white px-4 py-3 mt-3 hover:border-2 hover:border-slate-800 hover:text-slate-400 hover:bg-white hover:font-semibold"
           onClick={onClose}
         >
           Close
